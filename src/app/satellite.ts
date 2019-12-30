@@ -21,4 +21,6 @@ export class Satellite {
         }
         // shouldShowWarning returns true if the satellite type is 'Space Debris', and it returns false otherwise. Note that this check should be case-insensitive.
     }
+
+    
 }

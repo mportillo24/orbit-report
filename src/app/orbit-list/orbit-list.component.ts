@@ -26,4 +26,16 @@ export class OrbitListComponent implements OnInit {
     });
  }
 
+ //added this method but have to figure it out how to get it to work. Does something need to be passed to it? At which point does "satellites" populate with things so that I can access its length? The point of this is to pass a boolean to the [class.zebra] which will toggle whether or not the .zebra class will activate on that row. I am trying to accomplish this by selected either the even or odd rows. 
+ zebraStripes(): boolean {
+    for (let i = 0; i < this.satellites.length; i++) {
+       console.log(i);
+       if (i % 2) {
+          return true;
+       } else {
+          return false;
+       }
+    }
+ }
+
 }
